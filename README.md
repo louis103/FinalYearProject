@@ -31,6 +31,8 @@ https://github.com/bumptech/glide
 https://material.io/develop/android
 4. koin - Dependency Injection
 https://insert-koin.io/
+5. Gson - Writing and reading json data from custom Java classes.
+https://github.com/google/gson
 
 ### Figma design guideline for better accuracy
 
