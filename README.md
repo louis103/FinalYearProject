@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # louis_s_application4
 
@@ -68,3 +69,7 @@ Check your app\'s UI from the AppNavigation screens of your app.
   ├── resources          - Common classes for API
   └── RetrofitService.kt
 ```
+=======
+# FinalYearProject
+A project on monitoring and inspection of powerline infrastructure to ensure a reliable and safe supply of electricity to all Kenyan communities.
+>>>>>>> e6cd858b8c42974e2f502fd32c0f0c35c927279a
