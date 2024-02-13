@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <LinearLayout
+        android:id="@+id/linearRecordtransfor"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDetailsoffaul"
+            style="@style/txtInterbold15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:text="@string/msg_details_of_faul2"
+            tools:text="@string/msg_details_of_faul2" />
+
+        <TextView
+            android:id="@+id/txtDoesthepowerl"
+            style="@style/txtInterregular14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@string/msg_does_the_powerl"
+            tools:text="@string/msg_does_the_powerl" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/etFrame"-->
+<!--            style="@style/etSolidRoundedOutline_1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_19pxh"-->
+<!--            android:layout_marginTop="@dimen/_3pxv"-->
+<!--            android:layout_marginEnd="@dimen/_19pxh"-->
+<!--            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_5"-->
+<!--            android:ellipsize="end"-->
+<!--            android:hint="@string/msg_does_the_powerl"-->
+<!--            android:inputType="text"-->
+<!--            android:lineSpacingExtra="@dimen/_3pxh"-->
+<!--            android:paddingStart="@dimen/_15pxh"-->
+<!--            android:paddingTop="@dimen/_16pxv"-->
+<!--            android:paddingEnd="@dimen/_30pxh"-->
+<!--            android:paddingBottom="@dimen/_14pxv"-->
+<!--            android:singleLine="true"-->
+<!--            android:textColorHint="@color/gray_600"-->
+<!--            tools:ignore="Autofill" />-->
+
+        <RadioGroup
+            android:id="@+id/toggleIfTransformer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_marginEnd="@dimen/_19pxh">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/yes"
+                android:text="Yes" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:id="@+id/no"
+                android:text="No" />
+        </RadioGroup>
+
+        <!--A new toggle layout start here-->
+        <LinearLayout
+            android:id="@+id/toggleTransformerDetailsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/txtWhatisthecon"
+            style="@style/txtInterregular14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="@string/msg_what_is_the_con"
+            tools:text="@string/msg_what_is_the_con" />
+            <!--Dropdown for selecting condition of  -->
+<!--        <EditText-->
+<!--            android:id="@+id/etFrameOne"-->
+<!--            style="@style/etSolidRoundedOutline_2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_19pxh"-->
+<!--            android:layout_marginTop="@dimen/_4pxv"-->
+<!--            android:layout_marginEnd="@dimen/_19pxh"-->
+<!--            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_5"-->
+<!--            android:ellipsize="end"-->
+<!--            android:hint="@string/msg_what_is_the_con"-->
+<!--            android:inputType="text"-->
+<!--            android:lineSpacingExtra="@dimen/_3pxh"-->
+<!--            android:paddingStart="@dimen/_15pxh"-->
+<!--            android:paddingTop="@dimen/_15pxv"-->
+<!--            android:paddingEnd="@dimen/_30pxh"-->
+<!--            android:paddingBottom="@dimen/_15pxv"-->
+<!--            android:singleLine="true"-->
+<!--            android:textColorHint="@color/gray_601"-->
+<!--            tools:ignore="Autofill" />-->
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginEnd="@dimen/_19pxh">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:id="@+id/inputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Select a condition">
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/auto_complete_txt_condition"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            <!--Dropdown ends here-->
+        <LinearLayout
+            android:id="@+id/linearColumnphotoofthetr"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPhotoofthetr"
+                style="@style/txtInterregular14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/msg_photo_of_the_tr"
+                tools:text="@string/msg_photo_of_the_tr" />
+
+            <LinearLayout
+                android:id="@+id/linearRowchoosePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnChoosePhoto"
+                    style="@style/btnSolidRounded"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_24pxh"
+                    android:paddingTop="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_23pxh"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:singleLine="true"
+                    android:text="Choose/Take Photo"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtPhotoPath"
+            style="@style/txtInterregular12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:lines="3"
+            android:maxLines="3"
+            android:text="@string/msg_photos_sd_card"
+            tools:text="@string/msg_photos_sd_card" />
+        <FrameLayout
+            android:id="@+id/frameSelectedtaken"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_205pxv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/_19pxh">
+
+            <ImageView
+                android:id="@+id/selectedImgTransformer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:scaleType="centerInside"
+                android:src="@drawable/pline"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+        </LinearLayout>
+        <!--Layout ends here-->
+
+        <LinearLayout
+            android:id="@+id/linearNextbackbutto"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginBottom="@dimen/_85pxv"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBack"
+                style="@style/btnSolidRounded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_back"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_back" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                style="@style/btnSolidRounded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_weight="0.51"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="Save &amp; Cont"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

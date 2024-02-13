@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">StimaSafe</string>
+    <string name="select">Select Item</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="msg_what_is_the_sev">What is the severity of the incident?</string>
+    <string name="lbl_stimasafe">StimaSafe</string>
+    <string name="lbl_back">Back</string>
+    <string name="msg_does_the_powerl">Does the powerline have a transformer?</string>
+    <string name="msg_choose_activity">Choose activity to perform from below to continue</string>
+    <string name="lbl_next">Next</string>
+    <string name="lbl_take_photo">Take photo</string>
+    <string name="msg_details_of_faul2">Details of faulty powerline transformer</string>
+    <string name="msg_does_the_powerl2">Does the powerline have broken/loose cables?</string>
+    <string name="msg_select_the_inci">Select the incident type</string>
+    <string name="msg_select_date_and">Select date and time</string>
+    <string name="lbl_longitude">Longitude</string>
+    <string name="msg_record_powerlin">Record powerline incident</string>
+    <string name="msg_record_location">Record location of powerline</string>
+    <string name="msg_how_many_cables">How many cables are broken/loose?</string>
+    <string name="lbl_submit_form">Submit Form</string>
+    <string name="lbl_review_details">Review details</string>
+    <string name="msg_record_faulty_p">Record faulty powerline</string>
+    <string name="msg_incident_report">Incident Reporting</string>
+    <string name="lbl_latitude">Latitude</string>
+    <string name="msg_what_is_the_con">What is the condition of the transformer?</string>
+    <string name="msg_a_photo_of_the">A photo of the cables</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="msg_photo_of_the_po">Photo of the powerline</string>
+    <string name="msg_photo_of_the_tr">Photo of the transformer</string>
+    <string name="msg_photo_of_the_fa">Photo of the faulty powerline</string>
+    <string name="lbl_stima">Stima</string>
+    <string name="msg_details_of_faul">Details of faulty powerline</string>
+    <string name="msg_11_01_2024_8">11/01/2024 - 8:45:56</string>
+    <string name="lbl_safe">Safe</string>
+    <string name="msg_review_form_and">Review form and submit</string>
+    <string name="msg_photos_sd_card">/photos/sd-card/image.jpg</string>
+    <string name="msg_lorem_ipsum_dol">Lorem ipsum dolor sit amet consectetur. Vitae suspendisse aliquam blandit nunc gravida erat sed rutrum. Sed arcu risus a id. Duis facilisi adipiscing est arcu magna. Pulvinar aliquam arcu erat at habitant aliquam ullamcorper aliquam. Habitant pulvinar eleifend enim tellus nam elit tempus. Eleifend arcu congue ipsum ullamcorper risus tempus sit etiam. Sem eu nisi urna scelerisque in.
+Nibh eu vitae auctor ridiculus diam morbi semper cursus sodales. Consequat quis sed erat sem ac vulputate suspendisse quis pretium. Nunc rhoncus porta sit sed sed. Risus habitant amet vel ut est vitae rhoncus. Duis non arcu interdum amet cursus diam id enim. Tincidunt tortor tortor hendrerit elementum quisque sit. Nam sagittis in id in felis duis netus.
+Tempor orci enim elit ut imperdiet interdum quis consectetur. Gravida mattis amet ridiculus eget lectus et vitae. In semper massa sit urna tincidunt elementum mattis nibh. Lectus amet sit.</string>
+    <string name="msg_report_incident">Report Incident now</string>
+    <string name="msg_select_the_powe">Select the powerline incident type</string>
+    <string name="msg_how_many_casual2">How many casualties witnessed?</string>
+    <string name="msg_select_the_stat">Select the state of powerline</string>
+    <string name="msg_additional_deta">Additional Details</string>
+    <string name="msg_clear_and_resta">Clear and restart the form</string>
+    <string name="msg_how_many_casual">How many casualties</string>
+    <string name="msg_photo_of_faulty">Photo of faulty powerline</string>
+    <string name="msg_count_of_broken">Count of broken/loose cables</string>
+    <string name="lbl_choose_photo">Choose photo</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_initial_screen">InitialScreen</string>
+    <string name="moving_towards_a_safer_community">Moving towards a safer community...</string>
+    <string name="select_state">Select state</string>
+    <string name="no_photo_path">No photo has been recorded/selected!</string>
+</resources>

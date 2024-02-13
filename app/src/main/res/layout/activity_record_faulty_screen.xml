@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <LinearLayout
+        android:id="@+id/linearRecordfaultys"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDetailsoffaul"
+            style="@style/txtInterbold15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/msg_details_of_faul"
+            tools:text="@string/msg_details_of_faul" />
+
+        <TextView
+            android:id="@+id/txtSelectthestate"
+            style="@style/txtInterregular14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="State of the powerline" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/etFrame"-->
+<!--            style="@style/etSolidRoundedOutline"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/_20pxh"-->
+<!--            android:layout_marginTop="@dimen/_3pxv"-->
+<!--            android:layout_marginEnd="@dimen/_20pxh"-->
+<!--            android:background="@drawable/rectangle_bg_white_a700_border_bluegray_400_radius_5"-->
+<!--            android:ellipsize="end"-->
+<!--            android:hint="@string/msg_select_the_stat"-->
+<!--            android:inputType="text"-->
+<!--            android:lineSpacingExtra="@dimen/_3pxh"-->
+<!--            android:paddingStart="@dimen/_15pxh"-->
+<!--            android:paddingTop="@dimen/_16pxv"-->
+<!--            android:paddingEnd="@dimen/_30pxh"-->
+<!--            android:paddingBottom="@dimen/_14pxv"-->
+<!--            android:singleLine="true"-->
+<!--            android:textColorHint="@color/gray_500"-->
+<!--            tools:ignore="Autofill" />-->
+        <!--Dropdown goes here-->
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginEnd="@dimen/_20pxh">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/select_state"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        <TextView
+            android:id="@+id/txtSelectStruType"
+            style="@style/txtInterregular14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="Structural type of powerline" />
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginEnd="@dimen/_20pxh">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select type"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txt_str_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSelectdatetim"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSelectDate"
+                style="@style/btnSolidRounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="What is the date?"
+                android:textAllCaps="false" />
+
+            <LinearLayout
+                android:id="@+id/linearDatetime"
+                style="@style/groupStylecornerRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/selectDate1"
+                    style="@style/etSolidRoundedOutline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle_bg_white_a700_border_bluegray_400_radius_5"
+                    android:ellipsize="end"
+                    android:hint="21/01/2024"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:paddingStart="@dimen/_15pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray_500"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearRecordlocation"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRecordLocationOfPowerline"
+                style="@style/btnSolidRounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_13pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_13pxv"
+                android:singleLine="true"
+                android:text="@string/msg_record_location"
+                android:textAllCaps="false"
+                tools:text="@string/msg_record_location" />
+
+            <LinearLayout
+                android:id="@+id/linearDatetime1"
+                style="@style/groupStylecornerRadius"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTxtLatitude1"
+                    style="@style/etSolidRoundedOutline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle_bg_white_a700_border_bluegray_400_radius_5"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_latitude"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:paddingStart="@dimen/_15pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray_500"
+                    tools:ignore="Autofill" />
+                <EditText
+                    android:id="@+id/editTxtLongitude1"
+                    style="@style/etSolidRoundedOutline"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangle_bg_white_a700_border_bluegray_400_radius_5"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_longitude"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:lineSpacingExtra="@dimen/_3pxh"
+                    android:paddingStart="@dimen/_15pxh"
+                    android:paddingTop="@dimen/_16pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray_500"
+                    tools:ignore="Autofill" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearNextbackbutto"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_43pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBack"
+                style="@style/btnSolidRounded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_back"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_back" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                style="@style/btnSolidRounded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="Save &amp; Cont"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

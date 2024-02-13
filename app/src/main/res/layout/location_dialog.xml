@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/custom_location_dialog.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#60696064"
+    android:layout_margin="20sp"
+    android:padding="10dp">
+
+    <!-- Animated icon at the top center -->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/animatedIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/request_location" />
+
+    <!-- Location information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/latitudeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black_900"
+            android:text="Latitude:"/>
+
+        <TextView
+            android:id="@+id/longitudeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black_900"
+            android:text="Longitude:"/>
+
+        <TextView
+            android:id="@+id/accuracyTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black_900"
+            android:text="Accuracy(m):"/>
+
+        <TextView
+            android:id="@+id/altitudeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black_900"
+            android:text="Altitude(m):"/>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        >
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/cancelButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_baseline_cancel_24"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:contentDescription="Cancel"-->
+<!--            android:backgroundTint="@android:color/transparent"-->
+<!--            />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/retryButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_refresh"-->
+<!--            android:contentDescription="Retry"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:backgroundTint="@android:color/transparent"-->
+<!--            android:enabled="false"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/okButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:src="@drawable/ic_baseline_check_circle_24"-->
+<!--            android:backgroundTint="@android:color/transparent"-->
+<!--            android:contentDescription="Retry"/>-->
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Stop" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginStart="10dp"
+            android:text="Accept" />
+    </LinearLayout>
+
+</LinearLayout>

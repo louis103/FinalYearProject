@@ -1,0 +1,14 @@
+{
+  "accuracy": "0",
+  "altitude": "0",
+  "cableCount": "1",
+  "cablesPhotoPath": "/storage/emulated/0/Android/data/com.lowa_softwares.stimasafe/files/DCIM/IMG_20240207_135328628.jpg",
+  "powerlineLatitude": "-1.29844848",
+  "powerlineLongitude": "36.852995",
+  "powerlinePhotoPath": "/storage/emulated/0/Android/data/com.lowa_softwares.stimasafe/files/DCIM/IMG_20240207_135249889.jpg",
+  "powerlineRecordDate": "7/2/2024",
+  "powerlineState": "Downed",
+  "powerlineStrType": "Concrete pole",
+  "transformerPhotoPath": "/storage/emulated/0/Android/data/com.lowa_softwares.stimasafe/files/DCIM/IMG_20240207_135315665.jpg",
+  "transformer_cond": "Loose"
+}

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <RelativeLayout
+        android:id="@+id/linearReviewandsubm"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Scrollview for showing collected Geospatial data here-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/txtDescription"-->
+        <!--            style="@style/txtInterregular12"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="@dimen/_20pxh"-->
+        <!--            android:layout_marginTop="@dimen/_110pxv"-->
+        <!--            android:layout_marginEnd="@dimen/_20pxh"-->
+        <!--            android:gravity="center_horizontal"-->
+        <!--            android:text="@string/msg_lorem_ipsum_dol"-->
+        <!--            tools:text="@string/msg_lorem_ipsum_dol" />-->
+        <!--Scrollview ends here-->
+        <!--        Linear layout for nav-->
+
+        <TextView
+            android:id="@+id/txtReviewformand"
+            style="@style/txtInterbold15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Confirm data &amp; Submit"
+            android:textAlignment="center" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_below="@id/txtReviewformand"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Card view to hold data-->
+                <!-- Card view 1-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/teal_700"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="Powerline information"
+                            android:textColor="@color/black" />
+
+                        <ImageButton
+                            android:id="@+id/editPowerline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_edit_24"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="State of powerline: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/textViewPType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="Type of powerline: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/textViewDateOfCollection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="Date of Collection: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/textViewLat1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="Latitude: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/textViewLong1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="Longitude: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/textViewPowerlinePhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:lines="3"
+                            android:maxLines="3"
+                            android:text="Powerline photo: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:id="@+id/powerlineImageFinal"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/no_image"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Card view 2-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/teal_700"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="Transformer information"
+                            android:textColor="@color/black" />
+
+                        <ImageButton
+                            android:id="@+id/editTransformer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_edit_24"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewTransformerCondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="Transformer condition: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/textViewTransformerPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:lines="3"
+                            android:maxLines="3"
+                            android:text="Photo of transformer: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+
+                        <ImageView
+                            android:id="@+id/powerlineTransformerImageFinal"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/no_image"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!--Card view 3-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/teal_700"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:text="Power cables information"
+                            android:textColor="@color/black" />
+
+                        <ImageButton
+                            android:id="@+id/editAdditionalDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_edit_24"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textViewNoOfBrokenCables"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="No. of broken cables: "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/textViewCablesPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="Photo of powerline cables: "
+                            android:lines="3"
+                            android:maxLines="3"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/red_A700"
+                            android:textSize="15dp" />
+                        <ImageView
+                            android:id="@+id/powerlineCablesImageFinal"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/no_image"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearClearreviewsu"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scrollView"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearNextbackbutto"
+                style="@style/groupStylecornerRadius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEdit"
+                    style="@style/btnSolidRounded_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_edit"
+                    android:textAllCaps="false"
+                    tools:text="@string/lbl_edit" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmitForm"
+                    style="@style/btnSolidRounded_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_submit_form"
+                    android:textAllCaps="false"
+                    tools:text="@string/lbl_submit_form" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnClearAndRestartTheForm"
+                style="@style/btnSolidRounded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/msg_clear_and_resta"
+                android:textAllCaps="false"
+                tools:text="@string/msg_clear_and_resta" />
+        </LinearLayout>
+        <!--        linear nav ends here-->
+    </RelativeLayout>
+</layout>
