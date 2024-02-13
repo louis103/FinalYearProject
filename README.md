@@ -44,6 +44,7 @@ https://docs.dhiwise.com/docs/Designguidelines/intro .
 Check your app\'s UI from the AppNavigation screens of your app.
 
 ### Package Structure
+<p>NOTE: App exported as kotlin but coded using Java android.</p>
 
 
 ```
