@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <LinearLayout
+        android:id="@+id/linearSelectactivity"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtChooseactivity"
+            style="@style/txtInterbold20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_61pxh"
+            android:layout_marginTop="@dimen/_82pxv"
+            android:layout_marginEnd="@dimen/_61pxh"
+            android:gravity="center_horizontal"
+            android:text="@string/msg_choose_activity"
+            tools:text="@string/msg_choose_activity" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRecordFaultyPowerline"
+            style="@style/btnSolidRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_61pxh"
+            android:layout_marginTop="@dimen/_138pxv"
+            android:layout_marginEnd="@dimen/_61pxh"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_13pxv"
+            android:singleLine="true"
+            android:text="@string/msg_record_faulty_p"
+            android:textAllCaps="false"
+            tools:text="@string/msg_record_faulty_p" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRecordPowerlineIncident"
+            style="@style/btnSolidRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_61pxh"
+            android:layout_marginTop="@dimen/_21pxv"
+            android:layout_marginEnd="@dimen/_61pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_13pxv"
+            android:singleLine="true"
+            android:text="@string/msg_record_powerlin"
+            android:textAllCaps="false"
+            tools:text="@string/msg_record_powerlin" />
+
+        <TextView
+            android:id="@+id/checkPrefStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="0dp"
+            android:text="You dont have unsubmitted changes"
+            android:textAlignment="center"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+</layout>

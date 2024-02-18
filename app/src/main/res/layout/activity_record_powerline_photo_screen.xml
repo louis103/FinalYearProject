@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <LinearLayout
+        android:id="@+id/linearRecordpowerlin"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPhotooffaulty"
+            style="@style/txtInterbold15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/msg_photo_of_faulty"
+            tools:text="@string/msg_photo_of_faulty" />
+
+        <LinearLayout
+            android:id="@+id/linearColumnphotoofthefa"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_38pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPhotoofthefa"
+                style="@style/txtInterregular14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/msg_photo_of_the_fa"
+                tools:text="@string/msg_photo_of_the_fa" />
+
+            <LinearLayout
+                android:id="@+id/linearRowchoosePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnChooseTakePhoto"
+                    style="@style/btnSolidRounded"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_24pxh"
+                    android:paddingTop="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_23pxh"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:singleLine="true"
+                    android:text="Choose/Take photo"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPhotoPath"
+            style="@style/txtInterregular12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:ellipsize="end"
+            android:singleLine="false"
+            android:lines="3"
+            android:maxLines="3"
+            android:text="@string/msg_photos_sd_card"
+            tools:text="@string/msg_photos_sd_card" />
+
+        <FrameLayout
+            android:id="@+id/frameSelectedtaken"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_205pxv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_marginEnd="@dimen/_20pxh">
+
+            <ImageView
+                android:id="@+id/selectedImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pline"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearNextbackbutto"
+            style="@style/groupStylecornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginBottom="120dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBack"
+                style="@style/btnSolidRounded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_back"
+                android:textAllCaps="false"
+                tools:text="@string/lbl_back" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNext"
+                style="@style/btnSolidRounded"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_weight="0.51"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="Save &amp; Cont"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
