@@ -1,5 +1,7 @@
-## FinalYearProject
-A project on monitoring and inspection of powerline infrastructure to ensure a reliable and safe supply of electricity to all Kenyan communities.
+## PowerlineMobileApplication
+A geospatial enabled mobile application for crowd-sourcing data on faulty powerline infrastructure such as power grids, power poles, transformers and electric cables.
+
+### Below is a description on the project structure and its working...
 
 ### This section forms the mobile application
 
