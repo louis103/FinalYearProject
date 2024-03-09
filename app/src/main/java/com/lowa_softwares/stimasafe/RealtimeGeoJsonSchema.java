@@ -1,21 +1,17 @@
 package com.lowa_softwares.stimasafe;
 
 public class RealtimeGeoJsonSchema {
-    private String incidentType;
-    private String severityLevel;
-    private String dateOfIncident;
-    private String timeOfIncident;
+    private String incident_type;
+    private String severity;
     private String latitude;
     private String longitude;
-    private String image_url;
+    private String photo_of_incident;
 
-    public RealtimeGeoJsonSchema(String incidentType, String severityLevel, String dateOfIncident, String timeOfIncident, String latitude, String longitude, String image_url) {
-        this.incidentType = incidentType;
-        this.severityLevel = severityLevel;
-        this.dateOfIncident = dateOfIncident;
-        this.timeOfIncident = timeOfIncident;
+    public RealtimeGeoJsonSchema(String incident_type, String severity, String latitude, String longitude, String photo_of_incident) {
+        this.incident_type = incident_type;
+        this.severity = severity;
         this.latitude = latitude;
         this.longitude = longitude;
-        this.image_url = image_url;
+        this.photo_of_incident = photo_of_incident;
     }
 }
